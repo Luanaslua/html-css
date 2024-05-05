@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap');
+
+
+:root {
+    --fonte1: 'Poppins', sans-serif;
+    --fonte2: 'Signika', sans-serif;
+    --cor: #FFCC00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 6%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#t1 {
+    font-family: var(--fonte1);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#t2 {
+    font-family: var(--fonte2);
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--cor)
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcoes {
+    display: flex;
+    align-items: center;
+}
+
+.opcoes > li > a {
+    display: inline-block;
+    padding: 30px;
+    font-family: var(--fonte1);
+}
+
+.opcoes > li > a:hover {
+    color: var(--cor);
+    transition: all 0.2s;
+    transform: scale(1.2);
+}
+
+/*div que contém o botão*/
+.botao {
+    padding-top: 12px;
+}
+
+.bt1 {
+    background-color: var(--cor);
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-family: var(--fonte1);
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+}
+
+/*Hover para todos os botões*/
+button:hover {
+    box-shadow: 0px 0px 8px var(--cor);
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.parte1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 70px;
+}
+
+.esquerda > h1 {
+    font-family: var(--fonte1);
+    font-size: 2.5rem;
+}
+
+span {
+    color: var(--cor);
+}
+
+.esquerda > p {
+    font-family: var(--fonte1);
+    font-size: 1rem;
+    margin: 40px 0px;
+}
+
+.bt2 {
+    background-color: var(--cor);
+    border: none;
+    padding: 20px 70px;
+    border-radius: 40px;
+    font-family: var(--fonte1);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+}
+
+.direita {
+    padding: 30px;
+}
+
+/*Parte responsável pela animação da imagem principal*/
+.direita .img-principal {
+    position: relative;
+    animation: flutuante 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuante {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/**/
+
+.parte2 {
+    padding: 60px 4%;
+}
+
+.tit-planos {
+    font-family: var(--fonte1);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.planos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.tipos {
+    padding: 40px;
+    font-family: var(--fonte1);
+    border: 2px solid white;
+}
+
+.tipos:hover {
+    box-shadow: 0px 0px 15px var(--cor);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.tipos > i {
+    font-size: 70px;
+    color: var(--cor);
+}
+
+.tipos > p {
+    padding: 20px 0px;
+}
+
+.parte3 {
+    padding: 60px 4%;
+}
+
+.outros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.direita2 > h2 {
+    font-family: var(--fonte1);
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.direita2 > p {
+    font-family: var(--fonte1);
+    padding: 20px 0px;
+    text-align: justify;
+}
+
+.img-outros {
+    border: 2px solid white;
+}
+
+.parte4 {
+    padding: 60px 4%;
+}
+
+.contato {
+    border: 2px solid white;
+    padding: 50px;
+}
+
+.contato > h2 {
+    font-family: var(--fonte1);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 500px;
+    gap: 10px;
+    padding: 20px;
+}
+
+form input, textarea {
+    border: none;
+    width: 100%;
+    height: ;
+    background-color: white;
+    color: black;
+    font-family: var(--fonte1);
+    border-radius: 20px;
+    outline-color: var(--cor);
+    padding: 20px 15px;
+}
+
+form textarea {
+    resize: none;
+}
+
+.bt-enviar {
+    background-color: var(--cor);
+    font-family: var(--fonte1);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.bt-enviar:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px var(--cor);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+footer > a > i {
+    color: var(--cor);
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+/*Responsividade*/
+@media only screen and (max-width: 750px) {
+   header, .planos, .outros {
+    flex-direction: column;
+   }
+
+   .parte1 {
+    flex-direction: column-reverse;
+   }
+
+   .bt1 {
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    border-radius: 40px;
+   }
+}
